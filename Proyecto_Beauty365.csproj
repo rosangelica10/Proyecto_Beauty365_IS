@@ -283,6 +283,9 @@
     <Content Include="Views\Manage\admin.cshtml" />
     <Content Include="Views\Manage\Operaciones.cshtml" />
     <Content Include="Views\Manage\Ventas.cshtml" />
+    <Content Include="Views\Home\admin.cshtml" />
+    <Content Include="Views\Home\Operaciones.cshtml" />
+    <Content Include="Views\Home\Ventas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

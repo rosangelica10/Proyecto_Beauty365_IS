@@ -55,5 +55,22 @@ namespace Proyecto_Beauty365.Controllers
 
             return View();
         }
+
+        public ActionResult admin()
+        {
+            return View();
+        }
+
+        public ActionResult ventas()
+        {
+            return View();
+        }
+
+        public ActionResult operaciones()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
     }
 }
