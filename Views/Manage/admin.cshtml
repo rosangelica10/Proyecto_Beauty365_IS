@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "admin";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<h2>Perfil administrador</h2>
+
+
+<form asp-action="Login" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <span>
+            <a href="#">Mantenimiento de par&aacute;metros</a>
+        </span>
+    </div>
+
+    <div class="form-group">
+        <span>
+            <a href="#"> Ventas</a>
+        </span>        
+    </div>
+
+    <div class="form-group">
+        <span>
+            <a href="#"> Citas</a>
+        </span>
+    </div>
+
+    <div class="form-group">
+        <span>
+            <a href="#"> Reportes</a>
+        </span>        
+    </div>
+
+</form>
+

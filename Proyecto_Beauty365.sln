@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto_Beauty365", "Proyecto_Beauty365.csproj", "{B234FF50-F9D6-4067-88AD-D40D7081AD9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B234FF50-F9D6-4067-88AD-D40D7081AD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B234FF50-F9D6-4067-88AD-D40D7081AD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B234FF50-F9D6-4067-88AD-D40D7081AD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B234FF50-F9D6-4067-88AD-D40D7081AD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD12D6A5-6AF0-4FD3-A9DC-05D9D0D8EFCF}
+	EndGlobalSection
+EndGlobal

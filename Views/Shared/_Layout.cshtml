@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 365 Beauty Salon</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="https://kit.fontawesome.com/ca80878e94.js" crossorigin="anonymous"></script><!--FontAwesome-->
+    <link rel="stylesheet" href="~/Content/style.css" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md bg-black navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="~/Imagenes/LogoLandingPage.jpg" alt="Logo" class="d-inline-block align-text-bottom logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/AgendarCita">Agendar Cita</a>
+                        </li>
+                    </ul>
+
+                    <hr class="text-white-50" />
+
+                    <ul class="navbar-nav flex-row flex-wrap text-light">
+                        <li class="nav-item col-6 col-md-auto p-3">
+                            <a class="nav-link" href="">
+                                <i class="fa-brands fa-facebook iconRedes"></i>
+                                <small class="d-md-none ms-2">Facebook</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto p-3">
+                            <a class="nav-link" href="">
+                                <i class="fa-brands fa-instagram iconRedes"></i>
+                                <small class="d-md-none ms-2">Instagram</small>
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto p-3">
+                            <a class="nav-link" href="">
+                                <i class="fa-brands fa-whatsapp iconRedes"></i>
+                                <small class="d-md-none ms-2">WhatsApp</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container body-content mt-5">
+        @RenderBody()
+        <hr />
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Conectate con nosotros en las redes sociales:</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/365beauty.hn" class="me-4 text-reset">
+                        <i class="fa-brands fa-facebook iconRedes"></i>
+                    </a>
+                    <a href="https://www.instagram.com/365beauty.hn" class="me-4 text-reset">
+                        <i class="fa-brands fa-instagram iconRedes"></i>
+                    </a>
+                    <a href="https://wa.me/50498083843" class="me-4 text-reset">
+                        <i class="fa-brands fa-whatsapp iconRedes"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fa-solid fa-store iconRedes"></i>  365 Beauty Salon
+                            </h6>
+                            <p>
+                                Nuestra vision es satisfacer las necesidades de belleza
+                                de nuestros clientes mediante servicios de alta calidad.
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                            <p><i class="fas fa-home me-3"></i> Colonia las Minitas, avenida Juan Lindo, C. Real de Minas, Tegucigalpa</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                365beautysalon@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> +504 9808-3843</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © @DateTime.Now.Year Copyright:
+                <a class="text-reset fw-bold" href="https://github.com/cedilloER/Proyecto_Web_Ingenieria_de_Software">Grupo #1 Ingenieria de Software</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
