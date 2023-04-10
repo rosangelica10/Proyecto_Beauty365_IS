@@ -1,10 +1,12 @@
 using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Proyecto_Beauty365.Models;
 
 namespace Proyecto_Beauty365
 {
@@ -16,6 +18,7 @@ namespace Proyecto_Beauty365
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Database.SetInitializer(new InitializerDB());
         }
     }
 }
